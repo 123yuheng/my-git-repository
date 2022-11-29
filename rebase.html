@@ -28,6 +28,12 @@
 
             变基的使用：
                 1. git rebase <branch name> 向目标分支发起变基
+                    - 如果发生冲突，可以在手动解决冲突以后继续变基地
+                        git add <filename> 将解决冲突后的文件暂存
+                        git rebase --continue 继续变基地
+                    - 如果中途不想变基也可以取消
+                        git rebase --abort      
+                         
                 2. git switch <branch name> 切换到目标分支
                 3. git merge <branch name> 合并两个分支
      -->
