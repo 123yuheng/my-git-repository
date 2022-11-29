@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rebase</title>
+</head>
+<body>
+    <!-- 
+        变基(rebase)：
+            - 我们在开发的过程中除了可以直接使用merge合并以外，还可以使用变基
+
+            为什么要使用变基？
+                使用merge合并时，在提交记录中会将所有分支的创建以及合并的过程显示出来，
+                这样当项目比较复杂的时候，我们反复进行创建、合并、删除分支，代码的提交
+                记录就会变得比较混乱
+
+            变基的原理：
+                ① 找到距离当前分支和目标分支最近的祖先节点
+                ② 顺着祖先节点将当前分支所有的节点操作存储到一个临时的文件中
+                ③ 将当前分支指向的节点改变为目标分支的基底(最后一个节点)
+                ④ 重复之前临时存储的节点操作(快速合并)
+
+            注意：
+                1.变基的最终结果和合并是一样的，但是变基可以使得提交记录更加整洁清晰
+                2.大部分情况下变基和合并是可以互换的，但是当分支已经提交给了远程仓库时，尽量不要使用变基
+
+            变基的使用：
+                1. git rebase <branch name> 向目标分支发起变基
+                2. git switch <branch name> 切换到目标分支
+                3. git merge <branch name> 合并两个分支
+     -->
+     <h1>hello world</h1>
+</body>
+</html>

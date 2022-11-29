@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>branch</title>
+</head>
+
+<body>
+    <!-- 
+        节点：
+            - 我们每一次向git提交文件都会被创建节点，git就是通过节点来维护文件的状态的
+            - 使用git log可以查看之前的记录，每个节点都会有一个唯一的16进制的id
+
+        git中的分支(branch)：
+            - 节点会构成一个树状结构，树状结构中就会产生分支
+            - 默认情况下仓库中只有一条分支，那就是master分支
+            - 分支与分支之间相互独立，我们修改一个分支上的代码并不会对其他分支造成影响
+
+        分支相关的命令：
+            git branch 查看分支(至少存在一条分支，且分支中有节点时)
+            git branch <branch name> 创建新的分支(根据当前分支的节点)
+            git switch <branch name> 切换分支
+            git switch -c <branch name>  创建并切换分支
+            git branch <branch name> -d 删除分支
+            git merge <branch name> 使用当前合并指定的分支
+
+        合并：
+            - 当两条分支具有先后顺序且在同一条线上时，git可以直接将其合并(快速合并)
+            - 当两条分支不在同一条线并且修改的是同一文件时，需要我们手动选择合并的方式再进行合并
+     -->
+</body>
+
+</html>
